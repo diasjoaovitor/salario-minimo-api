@@ -1,0 +1,48 @@
+{
+  "name": "salario-minimo-api",
+  "version": "1.0.0",
+  "description": "Essa API retorna os valores dos salários mínimos vigentes no Brasil",
+  "repository": "https://github.com/diasjoaovitor/salario-minimo.git",
+  "homepage": "https://github.com/diasjoaovitor/salario-minimo#readme",
+  "author": "João Vitor <jvitordiass@outlook.com.br>",
+  "license": "ISC",
+  "main": "src/app.ts",
+  "keywords": [
+    "salario-minimo",
+    "webscraping",
+    "api",
+    "regex"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc --build",
+    "start": "node dist/src/app.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:ci": "jest --runInBand",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint . --ext js,ts --report-unused-disable-directives --max-warnings 0",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^22.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "git-commit-msg-linter": "^5.0.8",
+    "husky": "^9.1.4",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
