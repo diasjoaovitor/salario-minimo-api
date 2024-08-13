@@ -19,5 +19,5 @@ Esta API retorna os valores dos salários mínimos vigentes no Brasil, disponív
 git clone https://github.com/diasjoaovitor/salario-minimo-api
 cd salario-minimo-api
 npm i
-npm run dev
+npm run start
 ```

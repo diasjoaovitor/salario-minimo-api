@@ -14,9 +14,7 @@
     "regex"
   ],
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc --build",
-    "start": "node dist/src/app.js",
+    "start": "ts-node-dev --respawn --transpile-only src/app.ts",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:ci": "jest --runInBand",
